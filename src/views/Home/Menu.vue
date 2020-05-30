@@ -2,6 +2,7 @@
     <div class="menu" v-click-outside="() => open = false">
         <img class="button" @click="open = !open" src="@/assets/menu-icon.svg"/>
         <div class="items" :class="{show: open}">
+            <div class="item" @click="redirect('All')">all</div>
             <div class="item" @click="redirect('First')">doorknob</div>
             <div class="item" @click="redirect('Second')">faucet</div>
             <div class="item" @click="redirect('Third')">bed</div>
@@ -28,7 +29,7 @@
         top: 10px;
         right: 10px;
         text-align: right;
-        z-index: 1;
+        z-index: 46;
     }
     .button {
         width: 15px;

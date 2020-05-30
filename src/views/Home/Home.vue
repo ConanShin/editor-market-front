@@ -34,9 +34,12 @@
     .subview {
         position: relative;
         display: inline-block;
-        height: 90vh;
         width: calc(100% - 20px);
-        top: 5vh;
+        top: 50px;
         left: 10px;
+
+        .item {
+            width: 100%;
+        }
     }
 </style>

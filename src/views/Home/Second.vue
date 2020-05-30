@@ -1,6 +1,7 @@
 <template>
     <div class="second subview">
         Faucet
+        <img class="item" src="@/assets/samples/faucet/faucet.jpeg"/>
     </div>
 </template>
 

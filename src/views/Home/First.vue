@@ -1,6 +1,7 @@
 <template>
     <div class="first subview">
         Doorknob
+        <img class="item" src="@/assets/samples/doorknob/doorknob.jpeg"/>
     </div>
 </template>
 

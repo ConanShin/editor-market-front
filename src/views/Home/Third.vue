@@ -1,6 +1,7 @@
 <template>
     <div class="third subview">
         bed
+        <img class="item" src="@/assets/samples/bed/light.jpeg"/>
     </div>
 </template>
 
