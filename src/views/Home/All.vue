@@ -1,15 +1,15 @@
 <template>
     <div class="main subview">
-        <vue-flux :images="images" :transitions="transitions" :options="options"/>
+        <vue-flux :images="images" :transitions="transitions" :options="options"></vue-flux>
     </div>
 </template>
 
 <script>
     import {Vue, Component} from 'vue-property-decorator'
-    import {VueFlux} from 'vue-flux'
+    import {VueFlux, FluxPagination} from 'vue-flux'
 
     @Component({
-        components: {VueFlux}
+        components: {VueFlux, FluxPagination}
     })
     export default class All extends Vue {
         images = [
@@ -27,5 +27,7 @@
 </script>
 
 <style scoped lang="scss">
-
+    .main {
+        margin-top: 16px;
+    }
 </style>

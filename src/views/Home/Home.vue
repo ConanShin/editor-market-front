@@ -2,7 +2,9 @@
     <div class="home">
         <div class="title">chae's choice</div>
         <menu-list></menu-list>
-        <router-view/>
+        <transition name="fade" mode="out-in">
+            <router-view/>
+        </transition>
     </div>
 </template>
 
@@ -28,6 +30,18 @@
         top: 10px;
         left: 10px;
     }
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition-duration: 0.3s;
+        transition-property: opacity;
+        transition-timing-function: ease;
+    }
+
+    .fade-enter,
+    .fade-leave-active {
+        opacity: 0
+    }
 </style>
 
 <style lang="scss">
@@ -35,11 +49,14 @@
         position: relative;
         display: inline-block;
         width: calc(100% - 20px);
-        top: 50px;
+        top: 13vh;
         left: 10px;
 
         .item {
             width: 100%;
+        }
+        .price {
+            text-align: right;
         }
     }
 </style>
