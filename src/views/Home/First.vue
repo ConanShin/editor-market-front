@@ -1,6 +1,6 @@
 <template>
-    <div class="home">
-        Home
+    <div class="first subview">
+        Doorknob
     </div>
 </template>
 
@@ -8,7 +8,11 @@
     import {Vue, Component} from 'vue-property-decorator'
 
     @Component
-    export default class Home extends Vue {
+    export default class First extends Vue {
 
     }
 </script>
+
+<style scoped lang="scss">
+
+</style>

@@ -13,4 +13,14 @@
 </script>
 
 <style lang="scss">
+    @font-face {
+        font-family: Pecita;
+        src: url("./assets/fonts/Pecita.otf");
+    }
+
+    html, body, #app {
+        font-family: Pecita;
+        height: 100%;
+        margin: 0;
+    }
 </style>
