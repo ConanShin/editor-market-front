@@ -10,7 +10,8 @@ Vue.config.productionTip = false
 Vue.directive('click-outside', ClickOutside)
 
 const CLIENT_ID = 'wSIpNhzz66GNU1GeCqXH'
-const CALLBACK_URL = 'http://localhost:8080'
+const CALLBACK_URL = process.env.VUE_APP_CALLBACK_URL
+console.log(process.env)
 
 Vue.prototype.naver = new naver.LoginWithNaverId({
     clientId: CLIENT_ID,
